@@ -1,8 +1,6 @@
 .basic-grid {
-  display: -ms-grid;
   display: grid;
   gap: 1rem;
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
-/*# sourceMappingURL=style.css.map */
+
