@@ -12,3 +12,16 @@ To-Do:
 * [ ] Contact page
 * [ ] Icon design and other .svg
     * [ ] Navbar icons as well as site logo
+
+Notes:
+-Media queries can help css act responsively to different screen sizes
+-Using the grid to think big picture layout
+    -spanning certain elements across multiple rows or columns of the grid
+-
+-
+-
+-
+-
+-
+-
+-

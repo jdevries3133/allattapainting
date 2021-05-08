@@ -1,5 +1,47 @@
-.services {
+.main__grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-auto-rows: 2fr;
+  place-items: center;
+}
+
+.main__services {
+  grid-row: span 2;
+  position: relative;
+  float: left;
+}
+
+.main__services--card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 1fr;
+  padding: 0 10px
+}
+
+.main__centerContent {
+  grid-row: span 2;
+}
+
+.main__testimonials {
+  grid-row: span 2;
+}
+
+.main__testimonials--card {
+
+}
+
+.footer__actionButton {
+
+}
+
+.footer__actionButton--photos {
+
+}
+
+.footer__actionButton--about {
+
+}
+
+.footer__actionButton--contact {
+
 }
