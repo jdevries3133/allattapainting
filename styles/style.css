@@ -1,5 +1,36 @@
 :root {
-  --
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+}
+
+.theme__light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+  --bg-dropdown: var(--gray0);
+  --bg-box-shadow: rgba(0, 0, 0, 0.2);
+  --text: var(--gray6);
+}
+
+.theme__dark {
+  --bg: var(--gray5);
+  --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+  --bg-dropdown: var(--gray6);
+  --bg-box-shadow: rgba(0, 0, 0, 0.9);
+  --text: var(--gray0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out
 }
 
 .main__grid {
@@ -26,7 +57,7 @@
 }
 
 .main__services--card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--bg-box-shadow);
   border-radius: .3em;
   padding: 0 10px;
   margin: 3rem;
@@ -34,7 +65,6 @@
 
 .main__services--card:hover {
   transform: translateY(-.1rem);
-
 }
 
 .main__centerContent {
@@ -51,7 +81,7 @@
 }
 
 .main__testimonials--card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 var(--bg-box-shadow);
   border-radius: .3rem;
   padding: 0 10px;
   justify-self: center;
@@ -64,18 +94,10 @@
   justify-content: center;
 }
 
-.footer__actionButton {
+.footer__actionButton {}
 
-}
+.footer__actionButton--photos {}
 
-.footer__actionButton--photos {
+.footer__actionButton--about {}
 
-}
-
-.footer__actionButton--about {
-
-}
-
-.footer__actionButton--contact {
-
-}
+.footer__actionButton--contact {}
