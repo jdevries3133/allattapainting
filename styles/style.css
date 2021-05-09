@@ -70,12 +70,17 @@ body {
 .main__centerContent {
   grid-row: 2;
   grid-column: 2;
+  text-align: justify;
+  text-justify: auto;
+  justify-self: center;
   align-self: center;
 }
 
 .main__testimonials {
   grid-row: 2;
   grid-column: 3;
+  text-align: justify;
+  text-justify: auto;
   justify-self: center;
   align-self: center;
 }
