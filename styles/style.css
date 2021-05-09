@@ -4,50 +4,68 @@
 
 .main__grid {
   display: grid;
+  height: 100vh;
+  width: auto;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  grid-template-rows: 30vh 20vh 50vh;
-  /* grid-template-rows: repeat(auto-fit, minmax(30vh, 70vh)); */
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .main__header {
   grid-row: 1;
   grid-column: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 .main__services {
   grid-row: 2;
   grid-column: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 .main__services--card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: .3em;
-  width: 1fr;
   padding: 0 10px;
+  margin: 3rem;
 }
 
 .main__services--card:hover {
-  transform: translateY(-.2rem);
+  transform: translateY(-.1rem);
 
 }
 
 .main__centerContent {
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 2;
+  align-self: center;
 }
 
 .main__testimonials {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 3;
+  justify-self: center;
+  align-self: center;
 }
 
 .main__testimonials--card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: .3rem;
+  padding: 0 10px;
+  justify-self: center;
+  align-self: center;
+}
 
+.footer__flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footer__actionButton {
-  position: relative
+
 }
 
 .footer__actionButton--photos {
