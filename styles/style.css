@@ -115,25 +115,34 @@ body {
   align-self: center;
 }
 
-.footer__flag {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.footer__actionButton {}
-
-.footer__actionButton--photos {}
-
-.footer__actionButton--about {}
-
-.footer__actionButton--contact {}
-
 .secondary__grid {
   display: grid;
   height: 100vh;
   width: auto;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+
+.secondary__photos {
+  grid-column: 2;
+}
+
+.secondary__history {
+  grid-column: 2;
+}
+
+.secondary__contact {
+  grid-column: 2;
+  justify-content: center;
+  align-self: center;
+}
+
+.secondary__contact--form {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: 50vw;
+  min-width: 400px;
 }
