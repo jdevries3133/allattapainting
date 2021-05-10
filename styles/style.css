@@ -128,3 +128,12 @@ body {
 .footer__actionButton--about {}
 
 .footer__actionButton--contact {}
+
+.secondary__grid {
+  display: grid;
+  height: 100vh;
+  width: auto;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
